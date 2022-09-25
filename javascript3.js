@@ -26,3 +26,26 @@ const hello = a => {
     return a;
 }
 console.log(hello("안녕!!!"))
+
+
+//화살표 함수 구현해보기
+//배열이 주어졌을때 사용자의 연령 평균을 구해주는 함수를 만들어보자!!
+const personArray = [
+    { name: "John Doe", age: 20 },
+    { name: "Jane Doe", age: 19 },
+    { name: "Fred Doe", age: 32 },
+    { name: "Chris Doe", age: 45 },
+    { name: "Layla Doe", age: 37 },
+  ];
+  console.log(personArray[2])
+  // personArray의 나이 평균을 구해주는 Arrow Function을 작성해봅시다.
+  const getAgeAverage = () => {
+        let a = 0;
+        for(const person of personArray){
+            a += person['age']
+        };
+       return a / personArray.length;
+  };
+  
+console.log(getAgeAverage(personArray));
+
