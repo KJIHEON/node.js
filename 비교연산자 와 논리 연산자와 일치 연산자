@@ -1,0 +1,38 @@
+// //비교연산자
+// // console.log(1 < 2) //1이 2보다 작은지 true
+// // console.log(1 <=2)// 1이 2보다 작거나 같은지 false
+// // console.log(1 > 2)// 1이 2보다 큰지 true
+// // console.log(1 >= 2) // 1이 2보다 크거나 같은지 false
+
+// //논리 연산자 
+
+// // && (그리고)둘다 맞아야 함,  
+// // || 둘중에 하나만 맞으면 됨(또는) 
+// // !(not) 반대값이 나옴
+
+// // let a = true
+// // let b = true
+
+// // console.log(a && b) // true && true 이므로 ture
+// // console.log(a || b) // true || true 이므로 ture
+
+// // a = false
+// // console.log(a && b) // false && true 이므로 false
+// // console.log(a || b) // false || true 이므로 true
+
+// // b = false
+// // console.log(a && b) // false && false 이므로 false
+// // console.log(a || b) // false || false 이므로 false
+
+// // console.log(!a) // flase 이므로 ture 반대값이 나옴 
+
+// // 일치 연산자
+// // console.log(1 == 1) // 두개의 값이 일치헐때 true
+// // console.log(1 == "1") // "1" 문자열로 들어왔지만 값은 1이기 때문에 true
+// // console.log(1 === 1) // 두개의 값과 형태가 같기 떄문에 true
+// // console.log(1 === "1")//두개의 값은 같지만 형태는 숫자와 문자열 이기때문에 false
+// // 예제 1)
+// // const a = 90
+// // const b = 10
+// // const c = a + b
+// // console.log(`가격은 ${c * 0.8}원 입니다.`)
