@@ -88,13 +88,37 @@
 
 // const a = 1;
 // const b = 2;
-let num = 1
-const c = a=> {
-    if (a % 2 == 0){
-    return "odd"
-} else {
-    return "Even"
+// let num = 1
+// const c = a=> {
+//     if (a % 2 == 0){
+//     return "odd"
+// } else {
+//     return "Even"
+// }
+// }
+
+// console.log(c(num));
+
+//두 정수 사이의 합
+const a = 3;
+const b = 5;
+let sum = 0;
+//Math 라는 메소드를 사용 a , b 중 작은값 부터 시작해서 큰값까지 i를 증가해라
+for (i = Math.min(a,b); i <= Math.max(a,b); i++){
+  sum += i //sum에 i값을 누적 증가해라.
 }
+console.log(sum)
+
+function solution(a, b) {
+    var answer = 0;
+    let c = 0;
+for ( i = Math.min(a,b); i <= Math.max(a,b); i++){ //작은 값에서 큰값 까지 증가해라
+    if (a === b){ //만약 a와 b가 같다면
+        return answer = a; //a의 값을 반환
+    }else {
+      c = c + i  //그렇지 않으면 c의 값에 증가시켜라
+    }
+    console.log(c)
+}    
 }
 
-console.log(c(num));
