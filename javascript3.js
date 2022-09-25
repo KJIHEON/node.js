@@ -52,18 +52,36 @@
 
 
 // 구조 분해 할당 
-const array = [100,200];
+// const array = [100,200];
 
-const [a,b] = array//array 배열의 값을 불러내서 쓸수있다.
+// const [a,b] = array//array 배열의 값을 불러내서 쓸수있다.
+// console.log(a)
+
+// const student = {
+//     name: "KimGiHeon",
+//     age: 26,
+//     onlineClass: "Node JS",
+//   };
+//   const { name, age, onlineClass } = student //student 라는 객채에서 name,age, onloneClass를 뽑아내서 사용할수 있다
+//   console.log(name); // "Sparta"
+//   console.log(age); // 18
+//   console.log(onlineClass); // "Node JS"
+
+const example = ['apple','banana','mango','kiwi','melon'];
+//반복문을 사용해서 배열안의 값을 가져오자!!
+// for (const examples of example){ // for of 문을 사용하여 배열 값을 하나씩 가져온다.
+//     a = examples;
+//     console.log(a)//example 의 배열의 객체값이 하나씩 들어온다.
+// };
+
+
+// for (let i = 0; i < example.length; i++){ //for의 증감문을 사용하는데 배열의 길이 만큼 가져와야한다.
+//     b = example[i]// i값을 돌면서 example 안에 있는 객체의 자리값을 가져와서 출력한다.
+//     console.log(b)
+// };
+//그렇다면 배열을 돌면서 각 객체 마다 개행을 해서 밑으로 붙히게 한다면 어떻게 하는가??
+let a = "";
+    for (const examples of example){ // for of 문을 사용하여 배열 값을 하나씩 가져온다.
+    a = a + `${examples}\n` // 각 객체를 가져오는데 그값을 하나씩 불러올때마다 개행을 바로 추가해서 넣어준다.
+    }
 console.log(a)
-
-const student = {
-    name: "KimGiHeon",
-    age: 26,
-    onlineClass: "Node JS",
-  };
-  const { name, age, onlineClass } = student //student 라는 객채에서 name,age, onloneClass를 뽑아내서 사용할수 있다
-  console.log(name); // "Sparta"
-  console.log(age); // 18
-  console.log(onlineClass); // "Node JS"
-  
