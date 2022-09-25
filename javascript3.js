@@ -20,3 +20,9 @@ console.log (sums(1,2)) // 3
 const sum2 = (a , b) =>  a + b; // return문구를 없애고 좀더 간단하게도 사용 가능하다
 
 console.log(sum2(3,4)) // 7
+
+//인자가 하나일때는 () 생략 가능
+const hello = a => {
+    return a;
+}
+console.log(hello("안녕!!!"))
