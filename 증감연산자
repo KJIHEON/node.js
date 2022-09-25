@@ -6,3 +6,23 @@
 // // //precount에 2의 값을 준다.
 // // //즉 증감 연산자를 앞에 붙혔을때는 count에 값을 증가(재할당)시키고 preCount에 값을 준다
 // // console.log(`count : ${count}, preCount : ${preCount}`)
+// // let counts = 1
+
+// // const preIncrement = counts++ 
+// // //counts에 1의 받을 받아온다.
+// // //preIncrement에 먼저 1의 값을 할당한다
+// // //counts에 1을 증가 시키고 counts 재할당한다
+// // //증감연산자를 뒤에 붙힐때는 preInremont에 먼저 값을 할당하고 counts에 재할당 된다.
+// // //변수를 할당 할때 const말고 let 을 쓰는이유
+// // //증감 연산자가 뒤에있을경우에는 재할당을 하기때문에 const를 쓰면 에러가 뜬다
+// // console.log(`counts : ${counts}, preIncrement : ${preIncrement}`)
+
+// // const first = 10000
+// // const second = 8000
+// // let last = 0
+// // last += first //자기 자신과 first의 값의 더한 값을 자기자신에 재할당
+// // console.log(last)
+// // last += second//자기 자신과 second의 값을 더한 값을 자기자신에 재할당
+// // console.log(last)
+// // last -= second//자기 자신과 second의 값을 뺀 값을 자기자신에 재할당
+// // console.log(last)
