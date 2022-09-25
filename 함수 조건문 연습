@@ -1,0 +1,120 @@
+function a ( b, c ) {
+// //     const sum = b + c //합
+// //     console.log(`두 상품의 합은 ${sum}입니다.`)
+// //     const avg = sum / 2 //평균
+// //     return avg //최종 적으로 avg의 할당된 데이터를 반환한다
+// // }
+
+// // const b =  1000
+// // const c =  3000
+// // const d = a(b, c) //만들어 두었던 fuction 함수를 실행
+// // console.log(`평균은 ${d}`) // 2000출력
+
+// // function init() {
+// //     var name = "Mozilla"; // name은 init에 의해 생성된 지역 변수이다.
+// //     function displayName() { // displayName() 은 내부 함수이며, 클로저다.
+// //       console.log(name); // 부모 함수에서 선언된 변수를 사용한다.
+// //     }
+// //     displayName();
+// //   }
+// //   init();
+
+// //   if (Math.random() > 0.5) {
+// //     var x = 1;
+// //   } else {
+// //     var x = 2;
+// //   }
+// //   console.log(x)
+
+// //   if (Math.random() > 0.5) {
+// //     const t = 1;
+// //   } else {
+// //     const t = 2;
+// //   }
+// //   console.log()
+
+// //   function makeFunc() {
+// //     var name = "Mola";
+// //     function displayName() {
+// //       console.log(name);
+// //     }
+// //     return displayName;
+// //   }
+
+// //   var myFunc = makeFunc();
+// //   //myFunc변수에 displayName을 리턴함
+// //   //유효범위의 어휘적 환경을 유지
+// //   myFunc();
+// //   //리턴된 displayName 함수를 실행(name 변수에 접근)
+// // function a (a1,a2,a3) {
+// //     const avg = (a1+a2+a3) / 3
+// //     return avg
+// // }
+
+// // a11 = 1000
+// // a22 = 2000
+// // a33 = 3000
+// // const avg = a(a11,a12,a13)
+// // console.log(avg)
+// // const Notebook1Name = "sam"
+// // const Notebook1Price = "2000"
+// // const Notebook1com = "Apple"
+
+// // class Notebook {
+// //     constructor (name, price, company){
+// //         this.name = name
+// //         this.price = price
+// //         this.com = com
+// //     }
+// // }
+
+// // let a = 3;
+// // let b = 5;
+// // let c = 0;
+// // for (i = Math.min(a,b); i <= Math.max(a,b); i++){
+// //     if (a == b){
+// //        //console.log(i)
+// //     }else {
+// //         c = c + i  
+// //     }    
+// // }
+// // console.log(c)
+
+// // for (let a = 0; a <= 20; a++){
+// //     if (a % 2 === 0){
+// //         console.log(`${a}는 짝수 입니다.`)
+// //     } else if (a % 2 === 1){
+// //         console.log(`${a}는 홀수 입니다.`)
+// //     }
+// // }
+// //  홀수 짝수
+// // char* solution(int num) {
+// //     // 리턴할 값은 메모리를 동적 할당해주세요
+// //     char* answer = (char*)malloc(answer);
+// //     if (num % 2 == 0){
+// //         return answer = "Even"     
+// //     } else{
+// //         return answer = "Odd"
+// //     }
+// // }
+
+// // 두정수의 합
+// // // const a = 5;
+// // // const b = 3; 
+// // // let c = 0;
+// // // for ( i = Math.min(a,b); i <= Math.max(a,b); i++){
+// // //     if (a == b){
+// // //         return a
+// // //     }else {
+// // //       c = c + i  
+// // //     }
+// // //     console.log(c)
+// // // }
+// // let b = 3;
+// // let a = 5;
+// // for ( j = 1; j <= a; j++){
+// //     for (i = 1; i <= b; i++){
+// //         c = "*".repeat(i);
+// //         } 
+// //         console.log(c)
+// // }   
