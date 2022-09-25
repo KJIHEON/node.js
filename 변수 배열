@@ -1,0 +1,33 @@
+/ //변수 = []
+// //변수[순서]
+// // const arr = [1,2,3,4,5] //index 는 배열안에 자리 잡은 순서이다 0부터 시작한다.
+//  // console.log(arr[0])// 호출한 배열을 부를때는 변수[순서] 해주면 된다.
+//  // console.log(arr[1])
+//  // console.log(arr[2])
+//  // console.log(arr[3])
+// // console.log(arr[4])
+
+// // console.log(arr.length) //길이는 1부터 시작한다
+// // console.log(arr[arr.length-1]) //마지막요소를 부를때는 길이의 -1  해주면 된다.
+
+// // //배열 추가 및 삭제
+// // const color = ['red', 'blue', 'yello']
+// // console.log(color) //기존 값인 'red', 'blue', 'yello' 출력된다.
+// // color.push('black')//push를 사용하여 color의 변수안에 black 을 추가한다.
+// // console.log(color)//black 이 추가되어 'red', 'blue', 'yello', 'black' 출력된다
+// // color.pop('black')// black 을 제거
+// // console.log(color)// black 이 제거되어  'red', 'blue', 'yello'이 나온다
+
+// // const color = ['red', 'blue', 'yello']
+// // for (const colors of color){
+// //     console.log(colors)
+// // }
+// //10개의 값의 합계와 평균 구하기
+// // const data = [1,2,3,4,5,6,7,8,9,10]
+// // let sum = 0; //반복 했던 sum의 값이 저장된다 55
+// // for (i = 0; i < data.length; i++){
+// //     sum = sum + data[i]
+// // }
+// // console.log(sum)
+// // const avg = sum / data.length
+// // console.log(avg) // 5.5
