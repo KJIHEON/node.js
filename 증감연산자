@@ -1,0 +1,8 @@
+// //증감연산자
+// // let count = 1
+// // const preCount = ++count 
+// // //count 에서 1의 값을 받아온다.
+// // //count를 1증가시켜 count재할당한다.
+// // //precount에 2의 값을 준다.
+// // //즉 증감 연산자를 앞에 붙혔을때는 count에 값을 증가(재할당)시키고 preCount에 값을 준다
+// // console.log(`count : ${count}, preCount : ${preCount}`)
