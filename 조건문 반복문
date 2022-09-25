@@ -1,0 +1,53 @@
+// //조건문 중요!!!!!!!!
+// // if (1 > 2){  // (조건) 1은 2보다 크다
+// //     console.log("안녕")  //1은 2보다 작기 때문에 실행되지 않는다.
+// //    }
+// //    if (1 < 2){ //(조건) 1은 2보다 작다
+// //     console.log("hi") //1은 2보다 작기 때문에 hi가 출력된다.
+// //    }
+
+// // 예제 1)
+
+// // const price = 30000
+// // if (price < 20000){
+// //     console.log("안녕!!") 
+// // } else if (price <= 30000){
+// //     console.log("안녕하세요") //출력
+// // } else {
+// //     console.log("hi!!")
+// // }
+
+// // 예제 2
+// // const KilloMeter =  10
+// // if (KilloMeter < 2){
+// //     console.log("걸어가자")
+// // } else if (KilloMeter >= 2 && KilloMeter < 5){ 킬로미터가 2이상 그리고 킬로미터가 5미만
+// //     console.log("택시를 타자")
+// // } else {
+// //     console.log("기차를 타자")
+// // }
+
+// // let a = 20 
+// // while (a < 25){
+// //     console.log(`온도는 ${a}도 입니다`)
+// //     a++
+    
+// // }
+
+// // for (let a = 0; a < 25; a++) {
+// //     console.log(`${a}도 정도면 적당해요`)
+// // }
+
+// // for (let a = 1; a <= 10; a++){
+// //     if (a % 3 === 0){
+// //         console.log(`${a}는 3으로 나눠서 떨어지는 값 입니다`) // 3 6 9 가 출력된다.
+// //     }
+// // }
+
+// // for (let a = 0; a <= 20; a++){
+// //     if (a % 2 === 0){
+// //         console.log(`${a}는 짝수 입니다.`)
+// //     } else if (a % 2 === 1){
+// //         console.log(`${a}는 홀수 입니다.`)
+// //     }
+// // }
