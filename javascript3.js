@@ -149,13 +149,23 @@
 // }
 // console.log(c)
 
-const numbers = [1,2,3,4,6,7,8,0] // 5, 9 비어있음 14
-let c = 0;
-for (i = 0; i <= 9; i++){
-   if(numbers.includes(i) == false){ 
-    //i의 값에 number의 값이 포함 되는지 물어보고 포함 하면 true 포함X면 false를 보낸다.
-    //그 값이 false면 i값을 더해줘라.  
-    c += i //false인 i값을 더해라
-   }
+// const numbers = [1,2,3,4,6,7,8,0] // 5, 9 비어있음 14
+// let c = 0;
+// for (i = 0; i <= 9; i++){
+//    if(numbers.includes(i) == false){ 
+//     //i의 값에 number의 값이 포함 되는지 물어보고 포함 하면 true 포함X면 false를 보낸다.
+//     //그 값이 false면 i값을 더해줘라.  
+//     c += i //false인 i값을 더해라
+//    }
+// }
+
+arr = [5,5]
+let avg = 0;
+for (const array of arr){
+   avg += array
+   
 }
-console.log(c)
+a = avg /arr.length
+console.log(a)
+
+  
