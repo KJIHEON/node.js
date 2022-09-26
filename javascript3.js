@@ -137,14 +137,25 @@
 //   }
 
 // }
-let a = [1, 2, 3]
-let b = [false,false,true]
+// let a = [1, 2, 3]
+// let b = [false,false,true]
+// let c = 0;
+// for (i = 0; i < a.length; i++){ //a의 길이만큼 반복한다.
+//  if (b[i] === true){ //b[i]즉 false ,false, true 을 뽑아낸다.
+//   c += a[i] // b[i]의 값이 true c에 a[i] 값을 증가시킨다 (더하기)
+// }else {
+//   c -= a[i] //b[i]의 값이 false c에 a[i]의 값을 빼준다
+// }
+// }
+// console.log(c)
+
+const numbers = [1,2,3,4,6,7,8,0] // 5, 9 비어있음 14
 let c = 0;
-for (i = 0; i < a.length; i++){
- if (b[i] === true){
-  c += a[i]
-}else {
-  c -= a[i]
-}
+for (i = 0; i <= 9; i++){
+   if(numbers.includes(i) == false){ 
+    //i의 값에 number의 값이 포함 되는지 물어보고 포함 하면 true 포함X면 false를 보낸다.
+    //그 값이 false면 i값을 더해줘라.  
+    c += i //false인 i값을 더해라
+   }
 }
 console.log(c)
