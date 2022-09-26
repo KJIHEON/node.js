@@ -241,16 +241,27 @@
 // return c;
 
 //부족금액 계산하기
-const price = 3;
-const count = 10; // 3 6 9 12
-const money = 2500
-let total = 0;
-for (i = 1; i <= count; i++){
-  total += price * i
+// const price = 3;
+// const count = 10; // 3 6 9 12
+// const money = 2500
+// let total = 0;
+// for (i = 1; i <= count; i++){
+//   total += price * i
+// }
+// if (money > total){
+//   result = 0; //가지고있는 돈이 총 내야할 돈보다 많을시 0
+// }else {
+// result = Math.max(money,total)-Math.min(money,total)
+// }
+// console.log(result)
+
+function days(a,b){
+ const day = ['SUN','MON','TUE','WED','THU','FRI','SAT']
+ let date1 = new Date(2016,a-1,b) //new Date(년,월,일)
+ console.log(date1.getDay())
+   day[date1.getDay()]//date1.getday() = date1에 해당하는 날짜의 요일의 번호를 가져온다 2
+   //2를 가져오고 day의 배열에서 2번째 값을 가져온다 0,1,2 TUE
 }
-if (money > total){
-  result = 0; //가지고있는 돈이 총 내야할 돈보다 많을시 0
-}else {
-result = Math.max(money,total)-Math.min(money,total)
-}
-console.log(result)
+days(5,24)
+
+
