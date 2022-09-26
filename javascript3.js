@@ -231,11 +231,21 @@
 //       answer[i][j] = arr1[i][j] + arr2[i][j]               
 //   }
 // }
-let x = -4;
-let n = 2;
-let c = [];
-let d = 0;
-for(let j = 0; j < n; j++){ 
-    c.push(d += x)
+// let x = -4;
+// let n = 2;
+// let c = [];
+// let d = 0;
+// for(let j = 0; j < n; j++){ 
+//     c.push(d += x)
+// }
+// return c;
+const myMoney = 30
+const price = 3;
+const count = 4; // 3 6 9 12
+const money = 4
+let total = 0;
+for (i = 1; i <= count; i++){
+  total += price * i
 }
-return c;
+result = Math.max(myMoney,total)-Math.min(myMoney,total)
+console.log(result)
