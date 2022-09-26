@@ -177,35 +177,65 @@
 // 전화번호가 문자열 phone_number로 주어졌을 때, 
 // 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 
 // 리턴하는 함수, solution을 완성해주세요.
-let phone = "027778888" //*****8888
-let phones =""; //if ***** else 8888
-for (i = 0; i < phone.length; i++){ //phone의 길이 만큼 반복한다
-  if(i < (phone.length)-4 ){ //i의 값이 phone길이의 -4를 뺸값(즉 i값 01234 번까지) 까지 phones에 *를 추가한다.
-      phones += "*" // phones *****
-  } else { //넘어가면 else안에 함수가 실행
-    phones += phone[i] //5678 까지 번호를 누적해서 넣어줌
-  }
-}console.log(phones)
-// console.log(phone.substring((phone.length)-4,phone.length)) 7891
-// phone[i] = phone 027778888 (123456789)
-// i = 012345678
+// let phone = "027778888" //*****8888
+// let phones =""; //if ***** else 8888
+// for (i = 0; i < phone.length; i++){ //phone의 길이 만큼 반복한다
+//   if(i < (phone.length)-4 ){ //i의 값이 phone길이의 -4를 뺸값(즉 i값 01234 번까지) 까지 phones에 *를 추가한다.
+//       phones += "*" // phones *****
+//   } else { //넘어가면 else안에 함수가 실행
+//     phones += phone[i] //5678 까지 번호를 누적해서 넣어줌
+//   }
+// }console.log(phones)
+// // console.log(phone.substring((phone.length)-4,phone.length)) 7891
+// // phone[i] = phone 027778888 (123456789)
+// // i = 012345678
 
 
-// //slice 함수 알아보기
-const s = [1,2,3,4,5]
-// //즉 변수.slice() 
-console.log(s.slice(-3)) //[3,4] 인덱스 값 2에서 부터 -1 뒤에서 몇번째 까지
-// console.log(s.slice(0)) //[1,2,3,4,5]
-// console.log(s.slice(2,-2)) //[3]
+// // //slice 함수 알아보기
+// const s = [1,2,3,4,5]
+// // //즉 변수.slice() 
+// console.log(s.slice(-3)) //[3,4] 인덱스 값 2에서 부터 -1 뒤에서 몇번째 까지
+// // console.log(s.slice(0)) //[1,2,3,4,5]
+// // console.log(s.slice(2,-2)) //[3]
 
-//repeat 함수 알아보기
-//주어진 문자열을 ()조건 만큼 반복한다
-console.log("abc".repeat(2)) //abcabc
+// //repeat 함수 알아보기
+// //주어진 문자열을 ()조건 만큼 반복한다
+// console.log("abc".repeat(2)) //abcabc
 
-c ="*".repeat(phone.length - 4) //*을 길이9에 -4를 뺀만큼 즉 5번 반복해준다. *****
-              + phone.slice(-4) //*****값에 phone의값을
-console.log(c)
-
-
+// c ="*".repeat(phone.length - 4) //*을 길이9에 -4를 뺀만큼 즉 5번 반복해준다. *****
+//               + phone.slice(-4) //*****값에 phone의값을
+// console.log(c)
 
 
+//  //  console.log(a) 는 인덱스 값이 나온다. 0,1 
+// //console.log(b)는 0,1,0,1
+
+// let answer = [];
+// for (let i=0; i<arr1.length; i++){
+//   answer[i] = [];
+//   for(let j=0; j<arr1.length; j++){
+//       answer[i].push(arr1[i][j] + arr2[i][j]);
+     
+//   }
+// }
+// return answer;
+// let arr1 = [[1,2],[3,4]] 
+// let arr2 = [[5,6],[7,8]]
+
+
+//   answer= [[]]
+//     for(var i = 0; i < arr1.length; i++){
+//        answer[i] = []
+//   for(var j = 0; j < arr1; j++){
+      
+//       answer[i][j] = arr1[i][j] + arr2[i][j]               
+//   }
+// }
+let x = -4;
+let n = 2;
+let c = [];
+let d = 0;
+for(let j = 0; j < n; j++){ 
+    c.push(d += x)
+}
+return c;
