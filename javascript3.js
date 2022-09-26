@@ -239,13 +239,18 @@
 //     c.push(d += x)
 // }
 // return c;
-const myMoney = 30
+
+//부족금액 계산하기
 const price = 3;
-const count = 4; // 3 6 9 12
-const money = 4
+const count = 10; // 3 6 9 12
+const money = 2500
 let total = 0;
 for (i = 1; i <= count; i++){
   total += price * i
 }
-result = Math.max(myMoney,total)-Math.min(myMoney,total)
+if (money > total){
+  result = 0; //가지고있는 돈이 총 내야할 돈보다 많을시 0
+}else {
+result = Math.max(money,total)-Math.min(money,total)
+}
 console.log(result)
