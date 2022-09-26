@@ -189,3 +189,9 @@ for (i = 0; i < phone.length; i++){ //phone의 길이 만큼 반복한다
 // console.log(phone.substring((phone.length)-4,phone.length)) 7891
 // phone[i] = phone 027778888 (123456789)
 // i = 012345678
+//slice 함수 알아보기
+const s = [1,2,3,4,5]
+//즉 변수.slice() 
+console.log(s.slice(2,-1)) //[3,4] 인덱스 값 2에서 부터 -1 뒤에서 몇번째 까지
+console.log(s.slice(0)) //[1,2,3,4,5]
+console.log(s.slice(2,-2)) //[3]
