@@ -159,13 +159,33 @@
 //    }
 // }
 
-arr = [5,5]
-let avg = 0;
-for (const array of arr){
-   avg += array
-   
-}
-a = avg /arr.length
-console.log(a)
 
-  
+// let avg = 0;
+// for (const array of arr){ //arr 배열안에 있는 값을 가져온다 5 5 
+//    avg += array // 가져온 값을 누적 더해준다
+   
+// }
+// a = avg /arr.length //더해진 값을 arr의 길이로 나눠준다.
+// console.log(a)
+// arr = [5,3,4]
+// function avg(arr){
+
+//   a = arr.reduce((a,b) => a + b) / arr.length; //화살표 함수로 표현한다.
+//   console.log(a)
+// }
+
+// 전화번호가 문자열 phone_number로 주어졌을 때, 
+// 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 
+// 리턴하는 함수, solution을 완성해주세요.
+let phone = "027778888" //*****8888
+let phones =""; //if ***** else 8888
+for (i = 0; i < phone.length; i++){ //phone의 길이 만큼 반복한다
+  if(i < (phone.length)-4 ){ //i의 값이 phone길이의 -4를 뺸값(즉 i값 01234 번까지) 까지 phones에 *를 추가한다.
+      phones += "*" // phones *****
+  } else { //넘어가면 else안에 함수가 실행
+    phones += phone[i] //5678 까지 번호를 누적해서 넣어줌
+  }
+}console.log(phones)
+// console.log(phone.substring((phone.length)-4,phone.length)) 7891
+// phone[i] = phone 027778888 (123456789)
+// i = 012345678
