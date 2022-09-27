@@ -400,7 +400,7 @@
 // }
 // return true
 
-let n = 20
+let n = 3
 answer ="";
 for (i = 0; i < n; i++){
     if(i % 2 == 0){
@@ -409,5 +409,5 @@ for (i = 0; i < n; i++){
       answer += "박"
     }
 }
-console.log(answer)
-
+const a = "수박".repeat(n).slice(0,n)
+console.log(a)
