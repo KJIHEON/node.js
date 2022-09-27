@@ -375,18 +375,29 @@
 // console.log(answer)
 
 //몇시간 했더라?
-function solution(arr1,arr2){
-  let answer = 0;
-  for (let i = 0; i < arr1.length; i++){
-    if (29 <= arr2[i]){ //29보다 크거나 같은, 즉 5시 이상 체크아웃이면
-      arr2[i] = 21 //21로 선언
-    }
-    let time = arr2[i] - arr1[i] //하루 공부한 시간 = 체크아웃 - 체크인
-    answer += time //answer에 더해 주기
-  }
-	return answer; //반환
-}
+// function solution(arr1,arr2){
+//   let answer = 0;
+//   for (let i = 0; i < arr1.length; i++){
+//     if (29 <= arr2[i]){ //29보다 크거나 같은, 즉 5시 이상 체크아웃이면
+//       arr2[i] = 21 //21로 선언
+//     }
+//     let time = arr2[i] - arr1[i] //하루 공부한 시간 = 체크아웃 - 체크인
+//     answer += time //answer에 더해 주기
+//   }
+// 	return answer; //반환
+// }
 
-let arr1 = [9,9,9,9,7,9,8]
-let arr2 = [23,23,30,28,30,23,23]
-console.log(solution(arr1,arr2))
+// let arr1 = [9,9,9,9,7,9,8]
+// let arr2 = [23,23,30,28,30,23,23]
+// console.log(solution(arr1,arr2))
+
+let s = "124"
+//길이가 4 혹은 6이 아니면 false 반환
+if (s.length !== 4 && s.length !== 6) return false;
+//각 자리중에 숫자가아닌 것이 하나라도 있으면 false 반환
+for(let i = 0;  i< s.length; i++){
+  if(isNaN(Number(s[i]))) return false;
+}
+return true
+
+
