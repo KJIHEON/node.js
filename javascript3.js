@@ -307,6 +307,7 @@
 
 // a > b ? console.log(a + [a]) : console.log("b가크네")
 
+// 내적
 // let a = [-1,0,1]
 // let b = [1,0,-1]
 // answer = 0;
@@ -314,15 +315,7 @@
 //   answer += (a[i]) * (b[i])
 // }
 // console.log(answer)
-// let s = "pPoooyY"
-// answer ="";
-// const countp = 0;
-// const county = 0;
-// for (i = 0; i < s.length; i++){
-//   console.log(s[i].equalsignoreCase())
-//  if(equalsignoreCase(s[i]) == 'p'){
-//    countp += 1;
-//  }
+
  
 // }
 // console.log(countp)
@@ -366,17 +359,34 @@
 // console.log(result)
 
 // 문제 2번 p와y의 갯수 구하기
-const s = "pyY"
-const s1 = s.toUpperCase()
-let countP = 0;
-let countY = 0;
-for( i = 0; i < s.length; i++){
-if (s1[i] == 'P'){
-    countP += 1;
+// const s = "pyY"
+// const s1 = s.toUpperCase()
+// let countP = 0;
+// let countY = 0;
+// for( i = 0; i < s.length; i++){
+// if (s1[i] == 'P'){
+//     countP += 1;
+//   }
+// if(s1[i] == 'Y'){
+//     countY += 1;
+//   }
+// }
+// let answer =(countP === countY)
+// console.log(answer)
+
+//몇시간 했더라?
+function solution(arr1,arr2){
+  let answer = 0;
+  for (let i = 0; i < arr1.length; i++){
+    if (29 <= arr2[i]){ //29보다 크거나 같은, 즉 5시 이상 체크아웃이면
+      arr2[i] = 21 //21로 선언
+    }
+    let time = arr2[i] - arr1[i] //하루 공부한 시간 = 체크아웃 - 체크인
+    answer += time //answer에 더해 주기
   }
-if(s1[i] == 'Y'){
-    countY += 1;
-  }
+	return answer; //반환
 }
-let answer =(countP === countY)
-console.log(answer)
+
+let arr1 = [9,9,9,9,7,9,8]
+let arr2 = [23,23,30,28,30,23,23]
+console.log(solution(arr1,arr2))
