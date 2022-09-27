@@ -339,22 +339,44 @@
 
 
 //문제 1번
-function solution(n){
-let sum = 0;
-let string = String(n).split("").reverse();// 각 숫자별로 나누어서 역순으로 배치
-let result = "";
-for(i = 0; i < string.length; i++){ //for 입력 받은 값의 길이로 돌린다
-  sum += Number(string[i]) // for문을 나누어서 돌린 값을 숫자로 바꾸고 sum에 증감시킨다.
-  if (i < string.length-1){ //조건문을 사용 하여 길이의 -1만큼
-    result += string[i]+ "+" //길이가 5이면 4만큼만 string[i](인덱스) 값과 "+"를 넣어준다)
-  }else {
-    result += string[i] // i가 길이보다 커지면 else로 빠져서 string[i](인덱스) 값만 넣어준다.
+// function solution(n){
+// let sum = 0;
+// let string = String(n).split("").reverse();// 각 숫자별로 나누어서 역순으로 배치
+// let result = "";
+// for(i = 0; i < string.length; i++){ //for 입력 받은 값의 길이로 돌린다
+//   sum += Number(string[i]) // for문을 나누어서 돌린 값을 숫자로 바꾸고 sum에 증감시킨다.
+//   if (i < string.length-1){ //조건문을 사용 하여 길이의 -1만큼
+//     result += string[i]+ "+" //길이가 5이면 4만큼만 string[i](인덱스) 값과 "+"를 넣어준다)
+//   }else {
+//     result += string[i] // i가 길이보다 커지면 else로 빠져서 string[i](인덱스) 값만 넣어준다.
+//   }
+// }
+// return result+`=${sum}`//3+5+2+8+1+7과 =27을 붙혀준다.
+// }
+// console.log(solution(718253))
+// console.log(solution(12345))
+// console.log(solution(1532576))
+//3번.
+
+
+// console.log(answer)
+// max = Math.max(...numbers)
+// min = Math.min(...numbers)
+// result = `${max} ${min}`
+// console.log(result)
+
+// 문제 2번 p와y의 갯수 구하기
+const s = "pyY"
+const s1 = s.toUpperCase()
+let countP = 0;
+let countY = 0;
+for( i = 0; i < s.length; i++){
+if (s1[i] == 'P'){
+    countP += 1;
+  }
+if(s1[i] == 'Y'){
+    countY += 1;
   }
 }
-return result+`=${sum}`//3+5+2+8+1+7과 =27을 붙혀준다.
-}
-console.log(solution(718253))
-console.log(solution(12345))
-console.log(solution(1532576))
-
-  
+let answer =(countP === countY)
+console.log(answer)
