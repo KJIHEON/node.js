@@ -255,13 +255,54 @@
 // }
 // console.log(result)
 
-function days(a,b){
- const day = ['SUN','MON','TUE','WED','THU','FRI','SAT']
- let date1 = new Date(2016,a-1,b) //new Date(년,월,일)
- console.log(date1.getDay())
-   day[date1.getDay()]//date1.getday() = date1에 해당하는 날짜의 요일의 번호를 가져온다 2
-   //2를 가져오고 day의 배열에서 2번째 값을 가져온다 0,1,2 TUE
-}
-days(5,24)
+// function days(a,b){
+//  const day = ['SUN','MON','TUE','WED','THU','FRI','SAT']
+//  let date1 = new Date(2016,a-1,b) //new d
+//  console.log(date1.getDay())
+//    day[date1.getDay()]//date1.getday() = date1에 해당하는 날짜의 요일의 번호를 가져온다 2
+//    //2를 가져오고 day의 배열에서 2번째 값을 가져온다 0,1,2 TUE
+// }
+// days(5,24)
 
+// const arr = [2,36,1,3]
+// const divisor = 1;
+// let answer = [];
+// for (i = 0; i < arr.length; i++){
+//   if(arr[i] % divisor == 0){
+//     answer.push(arr[i])
+//   }
+// }
+//   if(answer,length == 0){
+//     return [-1];
+//   }
+// return answer.sort((a,b) => a-b);
 
+// // console.log(a.map((item) => item % divisor == 0))
+
+// const arr = ["a","b","c"];
+
+// for(i = 0; i < arr.length; i++){
+//   let item = arr[i];
+//   console.log(item,i)
+// }
+
+// arr.map((item,index) => console.log(item,index))
+
+// const a = [1,2,3,4]
+
+// const result = a.filter(a => a > 2);
+// console.log(result)
+let arr = [5,9,7,10]
+let divisor = 5
+
+  let answer = arr.filter(item => item % divisor === 0)
+  //arr.filter 는 요소를 하나씩 꺼내오는데 true값을 반환한다.
+    console.log(answer) // [5,10]
+     console.log(answer.length) //통과 2개함
+     console.log(answer.length == 0) //통과 하는 값이 없다 0
+     console.log(answer.length == 0 ? [-1] : arr.sort((a,b)=> a-b))
+ //통과 하는 값이 0이면 [-1] 반환 하고, 통과하는 값은 오름차순으로 값을 뺀다.)
+// let a =200;
+// let b = 100;
+
+// a > b ? console.log(a + [a]) : console.log("b가크네")
