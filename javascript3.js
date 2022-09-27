@@ -307,10 +307,54 @@
 
 // a > b ? console.log(a + [a]) : console.log("b가크네")
 
-let a = [-1,0,1]
-let b = [1,0,-1]
-answer = 0;
-for (i = 0; i < a.length; i++){
-  answer += (a[i]) * (b[i])
+// let a = [-1,0,1]
+// let b = [1,0,-1]
+// answer = 0;
+// for (i = 0; i < a.length; i++){
+//   answer += (a[i]) * (b[i])
+// }
+// console.log(answer)
+// let s = "pPoooyY"
+// answer ="";
+// const countp = 0;
+// const county = 0;
+// for (i = 0; i < s.length; i++){
+//   console.log(s[i].equalsignoreCase())
+//  if(equalsignoreCase(s[i]) == 'p'){
+//    countp += 1;
+//  }
+ 
+// }
+// console.log(countp)
+
+// function solution(n){
+//   let result="";
+//   for(i = 0; i < n.length; i++){
+//     console.log(n)
+//   }
+//   // return result;
+// }
+// console.log(solution(718253))
+
+
+
+//문제 1번
+function solution(n){
+let sum = 0;
+let string = String(n).split("").reverse();// 각 숫자별로 나누어서 역순으로 배치
+let result = "";
+for(i = 0; i < string.length; i++){ //for 입력 받은 값의 길이로 돌린다
+  sum += Number(string[i]) // for문을 나누어서 돌린 값을 숫자로 바꾸고 sum에 증감시킨다.
+  if (i < string.length-1){ //조건문을 사용 하여 길이의 -1만큼
+    result += string[i]+ "+" //길이가 5이면 4만큼만 string[i](인덱스) 값과 "+"를 넣어준다)
+  }else {
+    result += string[i] // i가 길이보다 커지면 else로 빠져서 string[i](인덱스) 값만 넣어준다.
+  }
 }
-console.log(answer)
+return result+`=${sum}`//3+5+2+8+1+7과 =27을 붙혀준다.
+}
+console.log(solution(718253))
+console.log(solution(12345))
+console.log(solution(1532576))
+
+  
