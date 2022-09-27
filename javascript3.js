@@ -331,7 +331,7 @@
 
 
 
-//문제 1번
+// //문제 1번
 // function solution(n){
 // let sum = 0;
 // let string = String(n).split("").reverse();// 각 숫자별로 나누어서 역순으로 배치
@@ -341,15 +341,31 @@
 //   if (i < string.length-1){ //조건문을 사용 하여 길이의 -1만큼
 //     result += string[i]+ "+" //길이가 5이면 4만큼만 string[i](인덱스) 값과 "+"를 넣어준다)
 //   }else {
-//     result += string[i] // i가 길이보다 커지면 else로 빠져서 string[i](인덱스) 값만 넣어준다.
+//     result += string[i]+ "=" // i가 길이보다 커지면 else로 빠져서 string[i](인덱스) 값만 넣어준다.
 //   }
 // }
-// return result+`=${sum}`//3+5+2+8+1+7과 =27을 붙혀준다.
+// return result+`${sum}`//3+5+2+8+1+7과 =27을 붙혀준다.
 // }
 // console.log(solution(718253))
 // console.log(solution(12345))
 // console.log(solution(1532576))
-//3번.
+
+// function solution(n){
+//   let sum = 0;
+//   let string = String(n).split("").reverse();// 각 숫자별로 나누어서 역순으로 배치
+//   let result = "";
+//   for(i = 0; i < string.length; i++){ //for 입력 받은 값의 길이로 돌린다
+//     sum += Number(string[i]) // for문을 나누어서 돌린 값을 숫자로 바꾸고 sum에 증감시킨다.
+//     if (i < string.length){ 
+//       result += string[i]+ "+" 
+//     }
+//   }
+//   return result+`=${sum}`//3+5+2+8+1+7과 =27을 붙혀준다.
+//   }
+//   console.log(solution(718253))
+//   console.log(solution(12345))
+//   console.log(solution(1532576))
+// //3번.
 
 
 // console.log(answer)
@@ -400,14 +416,29 @@
 // }
 // return true
 
-let n = 3
-answer ="";
-for (i = 0; i < n; i++){
-    if(i % 2 == 0){
-      answer += "수"
-    } else {
-      answer += "박"
+// let n = 3
+// answer ="";
+// for (i = 0; i < n; i++){
+//     if(i % 2 == 0){
+//       answer += "수"
+//     } else {
+//       answer += "박"
+//     }
+// }
+// const a = "수박".repeat(n).slice(0,n)
+// console.log(a)
+
+//마라톤 완주
+function solution(participant, completion) {
+    participant.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
+    completion.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
+    for(const i=0;i<participant.length;i++){ //긴값으로 i증가
+        if(participant[i] !== completion[i]){//중복되지 않는 값만 통과
+            return participant[i]; //중복되지 않은 participant[i] 값을 리턴
+        }
     }
 }
-const a = "수박".repeat(n).slice(0,n)
-console.log(a)
+participant = ["mislav", "stanko", "mislav", "ana"]
+completion = ["stanko", "ana", "mislav"]
+console.log(solution(participant, completion))
+
