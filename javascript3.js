@@ -391,13 +391,23 @@
 // let arr2 = [23,23,30,28,30,23,23]
 // console.log(solution(arr1,arr2))
 
-let s = "124"
-//길이가 4 혹은 6이 아니면 false 반환
-if (s.length !== 4 && s.length !== 6) return false;
-//각 자리중에 숫자가아닌 것이 하나라도 있으면 false 반환
-for(let i = 0;  i< s.length; i++){
-  if(isNaN(Number(s[i]))) return false;
-}
-return true
+// let s = "124"
+// //길이가 4 혹은 6이 아니면 false 반환
+// if (s.length !== 4 && s.length !== 6) return false;
+// //각 자리중에 숫자가아닌 것이 하나라도 있으면 false 반환
+// for(let i = 0;  i< s.length; i++){
+//   if(isNaN(Number(s[i]))) return false;
+// }
+// return true
 
+let n = 20
+answer ="";
+for (i = 0; i < n; i++){
+    if(i % 2 == 0){
+      answer += "수"
+    } else {
+      answer += "박"
+    }
+}
+console.log(answer)
 
