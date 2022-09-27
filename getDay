@@ -1,0 +1,8 @@
+function days(a,b){
+ const day = ['SUN','MON','TUE','WED','THU','FRI','SAT']
+ let date1 = new Date(2016,a-1,b) //new d
+ console.log(date1.getDay())
+   day[date1.getDay()]//date1.getday() = date1에 해당하는 날짜의 요일의 번호를 가져온다 2
+   //2를 가져오고 day의 배열에서 2번째 값을 가져온다 0,1,2 TUE
+}
+days(5,24)
