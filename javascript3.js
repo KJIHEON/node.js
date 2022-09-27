@@ -292,17 +292,25 @@
 
 // const result = a.filter(a => a > 2);
 // console.log(result)
-let arr = [5,9,7,10]
-let divisor = 5
+// let arr = [5,9,7,10]
+// let divisor = 5
 
-  let answer = arr.filter(item => item % divisor === 0)
-  //arr.filter 는 요소를 하나씩 꺼내오는데 true값을 반환한다.
-    console.log(answer) // [5,10]
-     console.log(answer.length) //통과 2개함
-     console.log(answer.length == 0) //통과 하는 값이 없다 0
-     console.log(answer.length == 0 ? [-1] : arr.sort((a,b)=> a-b))
- //통과 하는 값이 0이면 [-1] 반환 하고, 통과하는 값은 오름차순으로 값을 뺀다.)
-// let a =200;
-// let b = 100;
+//   let answer = arr.filter(item => item % divisor === 0)
+//   //arr.filter 는 요소를 하나씩 꺼내오는데 true값을 반환한다.
+//     console.log(answer) // [5,10]
+//      console.log(answer.length) //통과 2개함
+//      console.log(answer.length == 0) //통과 하는 값이 없다 0
+//      console.log(answer.length == 0 ? [-1] : arr.sort((a,b)=> a-b))
+//  //통과 하는 값이 0이면 [-1] 반환 하고, 통과하는 값은 오름차순으로 값을 뺀다.)
+// // let a =200;
+// // let b = 100;
 
 // a > b ? console.log(a + [a]) : console.log("b가크네")
+
+let a = [-1,0,1]
+let b = [1,0,-1]
+answer = 0;
+for (i = 0; i < a.length; i++){
+  answer += (a[i]) * (b[i])
+}
+console.log(answer)
