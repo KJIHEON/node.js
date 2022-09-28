@@ -560,7 +560,17 @@
 // }
 // console.log(String(answer))
 
-let n = 12345;
-console.log([...n+""].map(a=>+a).reverse())
-console.log([...n+""])
-console.log([n+""].map(a=>-a))
+// let n = 12345;
+// console.log([...n+""].map(a=>+a).reverse())
+// console.log([...n+""])
+// console.log([n+""].map(a=>-a))
+
+let n = 118372;
+const a = String(n).split("")
+result = 0;
+for(i = 0; i < a.length; i++){
+   result += Number(a[i])
+}
+console.log([...n+""].sort().reverse().join("+")+`=${result}`)
+console.log(Number([...n+""].sort().reverse().join("")))
+// console.log(n.split(""))
