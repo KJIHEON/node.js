@@ -432,7 +432,7 @@
 function solution(participant, completion) {
     participant.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
     completion.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
-    for(const i=0;i<participant.length;i++){ //긴값으로 i증가
+    for(let i=0;i<participant.length; i++){ //긴값으로 i증가
         if(participant[i] !== completion[i]){//중복되지 않는 값만 통과
             return participant[i]; //중복되지 않은 participant[i] 값을 리턴
         }
