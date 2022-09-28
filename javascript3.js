@@ -565,12 +565,21 @@
 // console.log([...n+""])
 // console.log([n+""].map(a=>-a))
 
-let n = 118372;
-const a = String(n).split("")
-result = 0;
-for(i = 0; i < a.length; i++){
-   result += Number(a[i])
-}
-console.log([...n+""].sort().reverse().join("+")+`=${result}`)
-console.log(Number([...n+""].sort().reverse().join("")))
+// let n = 118372;
+// const a = String(n).split("")
+// result = 0;
+// for(i = 0; i < a.length; i++){
+//    result += Number(a[i])
+// }
+// console.log([...n+""].sort().reverse().join("+")+`=${result}`)
+// console.log(Number([...n+""].sort().reverse().join("")))
 // console.log(n.split(""))
+
+const n = 121
+console.log(Math.sqrt(n) % 1)
+sum = 0;
+if(Math.sqrt(n) % 1 == 0){
+    sum = (Math.sqrt(n)+1) * (Math.sqrt(n)+1)
+}else{
+    sum = -1
+}
