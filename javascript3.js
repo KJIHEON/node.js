@@ -575,11 +575,32 @@
 // console.log(Number([...n+""].sort().reverse().join("")))
 // console.log(n.split(""))
 
-const n = 121
-console.log(Math.sqrt(n) % 1)
-sum = 0;
-if(Math.sqrt(n) % 1 == 0){
-    sum = (Math.sqrt(n)+1) * (Math.sqrt(n)+1)
-}else{
-    sum = -1
+// const n = 121
+// console.log(Math.sqrt(n) % 1)
+// sum = 0;
+// if(Math.sqrt(n) % 1 == 0){
+//     sum = (Math.sqrt(n)+1) * (Math.sqrt(n)+1)
+// }else{
+//     sum = -1
+// }
+
+//제일 작은수 제거하기( 배열 )
+arr2 = (1,2,3,4)
+arr = [4, 3, 2, 1]
+arr1 = [10]
+console.log([...arr])
+console.log(Math.min(...arr))
+answer = [];
+for(i = 0; i < [...arr].length; i++){  
+    
+    if(arr[i] > Math.min(...arr)){
+      answer.push(arr[i])
+    }else if([...arr].length == 1){
+      answer.push(-1)
+    }
+    
 }
+console.log(answer)
+//arr에서 잘라낸다(arr에서 indexOf 인덱스 값을 찾는다(최소값),한개만 제거)
+arr.splice(arr.indexOf(Math.min(...arr)),1)
+// console.log(arr3)
