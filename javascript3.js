@@ -429,16 +429,110 @@
 // console.log(a)
 
 //마라톤 완주
-function solution(participant, completion) {
-    participant.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
-    completion.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
-    for(let i=0;i<participant.length; i++){ //긴값으로 i증가
-        if(participant[i] !== completion[i]){//중복되지 않는 값만 통과
-            return participant[i]; //중복되지 않은 participant[i] 값을 리턴
-        }
+// function solution(participant, completion) {
+//     participant.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
+//     completion.sort(); //배열을 정리해야 중복값을 알아낼수있음(오름차순)
+//     for(let i=0;i<participant.length; i++){ //긴값으로 i증가
+//         if(participant[i] !== completion[i]){//중복되지 않는 값만 통과
+//             return participant[i]; //중복되지 않은 participant[i] 값을 리턴
+//         }
+//     }
+// }
+// participant = ["mislav", "stanko", "mislav", "ana"]
+// completion = ["stanko", "ana", "mislav"]
+// console.log(solution(participant, completion))
+
+
+//배열연습하기
+//1. 주어진 배열을 문자로 바꾸어라
+const fruits = ['apple', 'banana','orange']
+console.log(String(fruits))
+console.log(fruits.join('+'))
+
+//2. 주어진 문자를 배열로 바꾸어라.  split() 주어진 조건으로 나누어서 배열로 만들어준다.
+const fruits2 = '🍎, 🥝, 🍌, 🍒';
+console.log(fruits2.split(','))
+
+//3. 주어진 배열을 역순으로 배치시켜라 reverse() 순서를 역으로 바꿈
+const array = [1, 2, 3, 4, 5];
+console.log(array.reverse())
+// Q4. make new array without the first two elements 
+//시작에서 2개를 제외하고 새로운 배열을 만들어라
+const array2 = [1, 2, 3, 4, 5];
+const arr1 = array2.slice(0)
+const arr2 = array2.splice(0,2)
+console.log(arr1)
+console.log(arr2)
+console.log(array2)
+
+
+///////
+
+class Student {
+    constructor(name, age, enrolled, score) {
+      this.name = name;
+      this.age = age;
+      this.enrolled = enrolled;
+      this.score = score;
     }
+  }
+  const students = [
+    new Student('A', 29, true, 45),
+    new Student('B', 28, false, 80),
+    new Student('C', 30, true, 90),
+    new Student('D', 40, false, 66),
+    new Student('E', 18, true, 88),
+  ];
+// Q5. find a student with the score 90
+//스코어가 90을 넘어가는 학생을 찾아라
+const result = students.find((student) => student.score === 90);
+console.log(result)
+
+
+// Q6. make an array of enrolled students 등록된 학생만 찾아보기
+const result1 = students.filter((student) => student.enrolled)
+console.log(result1)
+
+
+// Q7. make an array containing only the students' scores
+// result should be: [45, 80, 90, 66, 88]
+const result2 = students.map((student)=>student.score)
+console.log(result2)
+
+// Q8. check if there is a student with the score lower than 50
+const result3 = students.some((student)=>student.score <= 50)
+console.log(result3)
+
+// Q9. compute students' average score
+const result4 = students.reduce((prev , curr)=> {
+    console.log(prev)
+    console.log(curr)
+    return prev + curr.score;
+},0)
+console.log(result4/students.length)
+
+// const arr5 =[1,2,3,4,5]
+// const result5 = arr5.reduce((prev , curr)=> {
+//     console.log(prev)
+//     console.log(curr)
+//     return prev + curr
+// },0)
+// console.log(result5)
+
+
+// Q10. make a string containing all the scores
+// result should be: '45, 80, 90, 66, 88'
+{
+result5 = students
+.map(student=>student.score)
+.filter((score) => score>=50)
+.join();
 }
-participant = ["mislav", "stanko", "mislav", "ana"]
-completion = ["stanko", "ana", "mislav"]
-console.log(solution(participant, completion))
+console.log(result5);
+{
+const result6 = students.map(student=>student.score)
+.sort((a,b) => b-a)
+.join();
+console.log(result6)
+}
 
