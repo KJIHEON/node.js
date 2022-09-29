@@ -1,0 +1,24 @@
+0부터 9까지의 숫자 중 일부가 들어있는 정수 배열 numbers가 매개변수로 주어집니다. 
+numbers에서 찾을 수 없는 숫자는 두개입니다. 두 정수를 a,b라고 했을 때, a와 b 사이에 속한 모든 정수의 합을 리턴하는 함수, 
+solution을 완성하세요. 예를 들어 a = 3, b = 5인 경우, 3 + 4 + 5 = 12이므로 12를 리턴합니다.
+
+function solution(arr1){
+	let answer=0;
+    let str = "";
+    for(i = 0; i <= 9; i++){ 
+        if(arr1.includes(i) == false){ 
+            str += i
+        } 
+        
+    }
+    let str2 = str.split("").map(Number)
+    let max = Math.max(...str2) 
+    let min = Math.min(...str2)
+for (j = min; j <= max; j++){ 
+    answer += j
+}
+    return answer
+}
+
+let arr1=[7,8,3,5,6,1,2,4];
+console.log(solution(arr1))
