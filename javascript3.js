@@ -550,8 +550,8 @@
 
 
 
-//자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
-//예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다. 
+// 자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
+// 예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다. 
 // let n = 123;
 // n = String(n)
 // answer = 0;
@@ -584,23 +584,189 @@
 //     sum = -1
 // }
 
-//제일 작은수 제거하기( 배열 )
-arr2 = (1,2,3,4)
-arr = [4, 3, 2, 1]
-arr1 = [10]
-console.log([...arr])
-console.log(Math.min(...arr))
-answer = [];
-for(i = 0; i < [...arr].length; i++){  
+// 제일 작은수 제거하기( 배열 )
+// arr2 = (1,2,3,4)
+// arr = [4, 3, 2, 1]
+// arr1 = [10]
+// console.log([...arr])
+// console.log(Math.min(...arr))
+// answer = [];
+// for(i = 0; i < [...arr].length; i++){  
     
-    if(arr[i] > Math.min(...arr)){
-      answer.push(arr[i])
-    }else if([...arr].length == 1){
-      answer.push(-1)
-    }
+//     if(arr[i] > Math.min(...arr)){
+//       answer.push(arr[i])
+//     }else if([...arr].length == 1){
+//       answer.push(-1)
+//     }
     
+// }
+// console.log(answer)
+//arr에서 잘라낸다(arr에서 indexOf 인덱스 값을 찾는다(최소값),한개만 제거)
+// arr.splice(arr.indexOf(Math.min(...arr)),1)
+// // console.log(arr3)
+
+// console.clear()
+// console.log("dd")
+
+// function num(num) {
+//     var answer = 0;
+//     num+1
+//     return
+// }
+// console.log(num(5))
+// function solution(s) {
+
+ 
+//   }
+// console.log(solution(6))
+// console.log(11 % 2)
+// // a = 8
+// b = a % 2 == 0
+// answer = -1
+// answer += -5
+// console.log(answer)
+
+// 
+// 
+
+// console.log(['1','2','3'].map(x => parseInt(x)))
+
+// const solution = a => {
+//     if (a==1) return 0 //a가 1이면 0리턴
+//     let cnt = 0;
+//     let cal = a;
+//     for (let i = 0; i <500; i++ ){ //i가 499까지 증가
+//     cal % 2 ? cal = cal*3+1 : cal = cal / 2
+//     //3항 연산자는 true 1, false 0
+//     //cal를 2로 나눈 값이 1 0
+//     //(홀수) 1 cal*3+1
+//     //(짝수) 0 cal / 2
+//     cnt += 1 //한번할때 마다 cnt 1씩 증가
+//     if (cal == 1){ //cal이 1일시
+//       break // 반복문 중단
+//       }
+//     }
+//     return cnt < 500 ? cnt : cnt = -1
+//     //cnt 가 500보다 작다 = cnt 리턴
+//     // cnt가 500보다 크다 -1 리턴
+//   }
+// function solution(x) {
+//     let a = String(x).split("").map(x => +x)
+//     //숫자는 길이를 알수가 없어 문자로 바꿔준다
+//     //문자로 바꾼 숫자를 split 함수로 쪼개서 배열로 만들어주고
+//     //그 배열을 숫자로 만들어준다.
+//     let count = 0;
+
+// for (i = 0; i < a.length; i++){ //배열의 길이만큼 반복문 돌린다
+//      count += a[i] //각 배열을 count에 넣어준다 1 + 1 +1 이런식으로
+// }
+// return x % count ? false : true;
+// //3항 연산자를 써서 x % count x의 값을 count의 값으로 나누어준다
+// //3항 연산자는 ? (1은 true) : (0은 false로 받는다)
+// //답안에는 0일시 true가 나와야 하므로 반대로 적어주며 원하는 결과를 얻을 수 있다.
+// // x % count ? false : true;
+// }
+// console.log(solution(111))
+
+// let n = 2
+// let m = 10
+
+// c = "";
+// count = 1;
+// for (i = 0; i < m; i++){
+//     for (j = 0; j < count; j++){
+//         c += "*"    
+//     }if(count < m){
+//         c += `\n`
+//         count ++     
+//     }     
+// }
+// console.log(c)
+
+// d=""
+// count = 100;
+// for (i=0; i < m; i++){
+//     console.log(i)
+//     for(j= 0; j < m; j++){
+//         d += "*"
+        
+//     }
+//     count --
+    
+// }
+// console.log(d)
+// console.log(count)
+//수박 찍기 홀수엔 수박수 짝수엔 수박수박
+{
+n = 6;
+let a = '수박'.repeat(n).slice(0,n)
+console.log(a)
+}
+//짝수와 홀수
+{
+
+n = 7
+console.log(n % 2 ? "Odd" : "Even")
+}
+
+{
+s = "abcdesds"
+s1 = s.length
+s2 = s1 /2
+console.log(s1)
+answer = ""
+if(s1 % 2 ==0){
+  answer = s.substring(s2-1,s2+1)//짝수
+    // 홀수
+}else {
+    answer = s.substring(s2,s2+1) //홀수
 }
 console.log(answer)
-//arr에서 잘라낸다(arr에서 indexOf 인덱스 값을 찾는다(최소값),한개만 제거)
-arr.splice(arr.indexOf(Math.min(...arr)),1)
-// console.log(arr3)
+}
+//두 정수의 합
+{
+   const a = 3;
+   const  b = 3;
+   answer = 0;
+for (i = Math.min(a,b); i <= Math.max(a,b); i++){
+    answer += i
+}
+console.log(answer)
+}
+//문자를 숫자로 바꾸기
+{
+s = "-123.0"
+console.log(parseInt(s))
+}
+//없는 숫자 찾기
+{
+ arr = [1,2,3,4,6,7,8,0]
+ answer = 0;
+ for (i = 0; i <= 9; i++ ){ //1 --- 9까지 가야하기 때문에
+    if(arr.includes(i) == false){ //배열에 i값이 하나씩 돌면서 찾는다 없으면 false
+        answer += i
+    }  
+ }
+console.log(answer)
+}
+console.clear()
+{
+ab =  [1,2,3]
+s1 = [false, false, true]
+sum = 0;
+for (i = 0; i < ab.length; i++){
+    if(s1[i] === true){
+        sum += ab[i]
+    }else {
+        sum -= ab[i]
+    }
+}
+console.log(sum)
+}
+
+
+
+
+
+
+
