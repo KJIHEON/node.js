@@ -1,0 +1,17 @@
+function solution(x) {
+    let a = String(x).split("").map(x => +x)
+    //숫자는 길이를 알수가 없어 문자로 바꿔준다
+    //문자로 바꾼 숫자를 split 함수로 쪼개서 배열로 만들어주고
+    //그 배열을 숫자로 만들어준다.
+    let count = 0;
+
+for (i = 0; i < a.length; i++){ //배열의 길이만큼 반복문 돌린다
+     count += a[i] //각 배열을 count에 넣어준다 1 + 1 +1 이런식으로
+}
+return x % count ? false : true;
+//3항 연산자를 써서 x % count x의 값을 count의 값으로 나누어준다
+//3항 연산자는 ? (1은 true) : (0은 false로 받는다)
+//답안에는 0일시 true가 나와야 하므로 반대로 적어주며 원하는 결과를 얻을 수 있다.
+// x % count ? false : true;
+}
+console.log(solution(111))
