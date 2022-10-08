@@ -10,14 +10,14 @@ const port = 3000;
 connect()
 app.use(express.json())
 
-app.use(indexRouter)
+
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.sendFile(__dirname,"main.html")
 });
 
-
+app.use(indexRouter)
 
 
 
